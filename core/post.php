@@ -19,7 +19,7 @@ class Post{
         $this->conn = $db;
     }
 
-    // getting posts from database
+    // getting posts from database (function  to read from the database )
     public function read() {
         //create query
         $query = 'SELECT
@@ -31,10 +31,10 @@ class Post{
             p.author,
             p.created_at
             FROM
-            ' . $this->table . ' p
+            ' .$this->table . ' p
             LEFT JOIN
                 categories c ON p.category_id = c.id
-                ORDER BY p.created DESC';
+                ORDER BY p.created DESC';  add
 
         // prepare statement
         $stmt = $this->conn->prepare($query);
