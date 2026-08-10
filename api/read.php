@@ -1,7 +1,7 @@
 <?php
 //headers
-header('Acces-Control-Allow-Oriin: *');
-header('Content-Typr: Application/json');
+header('Acces-Control-Allow-Origin: *');
+header('Content-Type: Application/json');
 
 // initializion our api which everything we have // what we are doing is just to call the included  file to this section.
 include_once('../core/initialize.php');
