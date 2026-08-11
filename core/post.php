@@ -34,7 +34,7 @@ class Post{
             ' .$this->table . ' p
             LEFT JOIN
                 categories c ON p.category_id = c.id
-                ORDER BY p.created DESC';  add
+                ORDER BY p.created DESC'; 
 
         // prepare statement
         $stmt = $this->conn->prepare($query);
